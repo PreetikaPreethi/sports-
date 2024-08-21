@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_back_arrow"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp" /> <!-- Added padding to increase touch target -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glad to see you, Again!"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:autofillHints="email"
+        android:inputType="textEmailAddress"
+        tools:ignore="HardcodedText" /> <!-- Added padding to increase touch target -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"/>
+
+        <ImageView
+            android:id="@+id/toggle_password_visibility"
+            android:src="@drawable/ic_visibility_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/toggle_password_visibility"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password ??"
+        android:textColor="@color/holo_blue_light"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:padding="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account?"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Now"
+        android:textColor="@color/holo_blue_light"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"/>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".OnboardingActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_hub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sports hub keeps you informed about all the sports events happening around you whether it's a local football match a basketball game or a marathon you'll get real time updates and notifications"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="67dp"
+        android:backgroundTint="#181616"
+        android:text="@string/log_in"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="163dp"
+        android:backgroundTint="#949191"
+        android:text="sign up"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
